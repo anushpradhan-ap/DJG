@@ -1,3 +1,5 @@
+below codes were done on online compiler.
+
 //adding array 1
 #include <stdio.h>
 #define MAX_SIZE 100
