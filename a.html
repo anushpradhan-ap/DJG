@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/a.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<body>
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
+        <a href="#">DJG</a>
+        <a href="#"><i class="material-icons">dashboard</i>&nbsp;&nbsp;&nbsp;&nbsp;DashBoard</a>
+        <a href="#"><i class="material-icons">shopping_cart</i>&nbsp;&nbsp;&nbsp;&nbsp;All Products</a>
+        <a href="#"><i class="material-icons md-48">account_balance_wallet</i>&nbsp;&nbsp;&nbsp;&nbsp;Sales</a>
+        <a href="#"><i class="material-icons">feedback</i>&nbsp;&nbsp;&nbsp;&nbsp;Messages</a>
+        <a href="#"><i class="material-icons">alarm</i>&nbsp;&nbsp;&nbsp;&nbsp;Notification</a>
+        <a href="#"><i class="material-icons">build</i>&nbsp;&nbsp;&nbsp;&nbsp;settings</a>
+        <a href="#"><i class="material-icons">chrome_reader_mode</i>&nbsp;&nbsp;&nbsp;&nbsp;profile</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776; DJG</button>
+      </div>
+      <script>
+            var o =document.getElementById("main");
+            var to =document.getElementById("mySlidebar");
+            to.style.display = 'none';
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "300px";
+                document.getElementById("main").style.marginLeft = "300px";
+                o.style.display = 'none';
+                to.style.display = '';
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+                o.style.display = '';
+                to.style.display = 'none'; 
+            }
+      </script>
+  </div>
+ <div class="home_content">
+          <div class="navbar">
+            <h1 style="color: red; ">Select Outet</h1>
+              <div class="dropdown">
+                <button style="margin-left: 10px;" class="dropbtn">ABC Traders<i class="fa fa-angle-double-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">A Traders</a>
+                  <a href="#">B Traders</a>
+                  <a href="#">C traders</a>
+                </div>
+              </div> 
+          </div> 
+
+
+  </div>
+<div class="table">
+    <h1>Create order</h1>
+    <ul>
+      <h2>Product Name</h2>     
+      <h2>Brand</h2>
+      <h2>Size</h2>
+      <h2>Category</h2>
+      <h2>QTY</h2>
+      <h2>Total Price</h2>
+      <h2>Unit Selling Price</h2>
+    </ul>
+  <button type="button">Remove</button>
+    
+</div>
+
+
+</body>
+</html>
